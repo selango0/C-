@@ -1,0 +1,13 @@
+test-cases:
+    standard:
+        argv: []
+        stdin: ["300000.00", "5.25", "30"]
+        stdout: |
+            Enter the principal loan amount:    
+            Enter the annual interest rate:     
+            Enter the loan term in years:       
+        stderr: |
+        ofstreams:
+            - file-name: schedule.dat
+              test-file: test/schedule_test.dat
+        extra-tests: []
