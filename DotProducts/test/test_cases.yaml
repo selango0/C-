@@ -1,0 +1,10 @@
+test-cases:
+    standard:
+        argv: []
+        stdin: []
+        stdout: "250683025"
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: ['profile']
