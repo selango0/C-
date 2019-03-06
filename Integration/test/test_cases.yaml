@@ -1,0 +1,53 @@
+test-cases:
+    test-1:
+        argv: []
+        stdin: ["10", "0", "10"]
+        stdout: |
+            Enter a number of rectangles to use for integration:
+            Enter a lower bound for the integral:
+            Enter a upper bound for the integral:
+            sqrt sum = 21.1362
+            sin sum =  1.91799
+            foo sum =  70
+            bar sum =  442.5
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+    test-2:
+        argv: []
+        stdin: ["100", "0", "10"]
+        stdout: |
+            Enter a number of rectangles to use for integration:
+            Enter a lower bound for the integral:
+            Enter a upper bound for the integral:
+            sqrt sum = 21.0837
+            sin sum =  1.83984
+            foo sum =  70
+            bar sum =  443.325
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+    test-3:
+        argv: []
+        stdin: ["100", "-10", "10"]
+        stdout: |
+            Enter a number of rectangles to use for integration:
+            Enter a lower bound for the integral:
+            Enter a upper bound for the integral:
+            sqrt sum = -nan
+            sin sum =  -0.592906
+            foo sum =  -460
+            bar sum =  2286.6
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+
+
+
+
