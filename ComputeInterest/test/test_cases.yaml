@@ -1,0 +1,37 @@
+test-cases:
+    test-1:
+        argv: []
+        stdin: ["100000.0", "12"]
+        stdout: |
+            enter a loan amount: 
+            enter a loan term: 
+            total interest = 34488.9
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+    test-2:
+        argv: []
+        stdin: ["100.0", "96"]
+        stdout: |
+            enter a loan amount: 
+            enter a loan term: 
+            total interest = 970.264
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+    test-3:
+        argv: []
+        stdin: ["1000000.0", "-6"]
+        stdout: |
+            enter a loan amount: 
+            enter a loan term: 
+            total interest = 0
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
