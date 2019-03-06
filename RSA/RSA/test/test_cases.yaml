@@ -1,0 +1,25 @@
+test-cases:
+    sample_1:
+        argv: ["test/sample.txt" , "encrypted.txt" , "decrypted.txt"]
+        stdin: []
+        stdout: |
+			Source File: test/sample.txt
+			Encrypted File: encrypted.txt
+			Decryted File: decrypted.txt
+
+			Using RSA Key Files: 
+
+
+			Public Key File: /clam/u3/students/ss3063/.rsapublic
+			Private Key File: /clam/u3/students/ss3063/.rsaprivate
+			Encrypting...
+
+			Decrypting...
+
+
+        stderr: |
+        ofstreams:
+            - file-name: decrypted.txt
+              test-file: test/sample.txt
+        extra-tests: []
+    
