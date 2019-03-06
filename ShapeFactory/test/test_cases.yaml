@@ -1,0 +1,39 @@
+test-cases:
+    shape_1:
+        argv: ["test/shapes_1.config"]
+        stdin: []
+        stdout: |
+            2.51327 0.502655
+            4 1
+        stderr: |
+        ofstreams:
+            - file-name: points_1.dat
+              test-file: test/shapes_1_points_1.dat
+            - file-name: points_2.dat
+              test-file: test/shapes_1_points_2.dat
+        extra-tests: []
+    shape_2:
+        argv: ["test/shapes_2.config"]
+        stdin: []
+        stdout: |
+            2.51327 0.502655
+            1.88496 0.282743
+            1.25664 0.125664
+            4 1
+            1 0.06
+            0.6 0.02
+        stderr: |
+        ofstreams:
+            - file-name: points_1.dat
+              test-file: test/shapes_2_points_1.dat
+            - file-name: points_2.dat
+              test-file: test/shapes_2_points_2.dat
+            - file-name: points_3.dat
+              test-file: test/shapes_2_points_3.dat
+            - file-name: points_4.dat
+              test-file: test/shapes_2_points_4.dat
+            - file-name: points_5.dat
+              test-file: test/shapes_2_points_5.dat
+            - file-name: points_6.dat
+              test-file: test/shapes_2_points_6.dat
+        extra-tests: []
