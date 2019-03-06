@@ -1,0 +1,16 @@
+test-cases:
+    standard:
+        argv: []
+        stdin: []
+        stdout: |
+            Chemical 1 : name = water, mass 100.0, specific heat capacity = 4.184
+            Applying 1000 joules of energy to some water!
+            The water's final temperature is 2.39006 degrees Celsius
+            Chemical 2 : name = hydrogen chloride, mass 100.0, specific heat capacity = 0.7981
+            Absorbing 1000 joules of energy from the hydrogen chloride!
+            The hydrogen chloride's final temperature is -12.5298 degrees Celsius
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
