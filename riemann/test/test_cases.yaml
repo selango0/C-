@@ -1,0 +1,10 @@
+test-cases:
+    standard:
+        argv: []
+        stdin: []
+        stdout: |
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
