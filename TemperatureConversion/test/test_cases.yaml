@@ -1,0 +1,98 @@
+test-cases:
+    f-to-c-1:
+        argv: []
+        stdin: ["212.0", "f"]
+        stdout: |
+            Enter a temperature:
+            What unit is the temperature in? (c or f)
+            212F = 100C
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+    f-to-c-2:
+        argv: []
+        stdin: ["32.0", "f"]
+        stdout: |
+            Enter a temperature:
+            What unit is the temperature in? (c or f)
+            32F = 0C
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+    f-to-c-3:
+        argv: []
+        stdin: ["47.2", "f"]
+        stdout: |
+            Enter a temperature:
+            What unit is the temperature in? (c or f)
+            47.2F = 8.44444C
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+    c-to-f-1:
+        argv: []
+        stdin: ["100.0", "c"]
+        stdout: |
+            Enter a temperature:
+            What unit is the temperature in? (c or f)
+            100C = 212F
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+    c-to-f-2:
+        argv: []
+        stdin: ["34.0", "c"]
+        stdout: |
+            Enter a temperature:
+            What unit is the temperature in? (c or f)
+            34C = 93.2F
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+    c-to-f-3:
+        argv: []
+        stdin: ["19.12", "c"]
+        stdout: |
+            Enter a temperature:
+            What unit is the temperature in? (c or f)
+            19.12C = 66.416F
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+    error-1:
+        argv: []
+        stdin: ["19.12", "C"]
+        stdout: |
+            Enter a temperature:
+            What unit is the temperature in? (c or f)
+            ERROR
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+    error-2: 
+        argv: []
+        stdin: ["19.12", "F"]
+        stdout: |
+            Enter a temperature:
+            What unit is the temperature in? (c or f)
+            ERROR
+        stderr: |
+        ofstreams:
+            - file-name: 
+              test-file: 
+        extra-tests: []
+ 
